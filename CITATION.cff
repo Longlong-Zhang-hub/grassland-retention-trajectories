@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this software release if you use the code or synthetic demonstrations."
+title: "Common-age retention and post-exit trajectories of mapped grassland gains in northern China: software and synthetic tests"
+type: software
+version: "0.1.0-rc1"
+license: MIT
+authors:
+  - family-names: "Zhang"
+    given-names: "Longqi"
+  - family-names: "Jia"
+    given-names: "Guodong"
+  - family-names: "Yu"
+    given-names: "Xinxiao"

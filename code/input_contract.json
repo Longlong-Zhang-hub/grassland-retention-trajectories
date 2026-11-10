@@ -1,0 +1,406 @@
+{
+  "code_scenarios.csv": {
+    "fields": [
+      "scenario",
+      "version",
+      "K",
+      "product",
+      "support",
+      "pathway",
+      "primary_pathway",
+      "source_opportunities",
+      "source_observation_status",
+      "weight",
+      "episode_count",
+      "cumulative_episode_area_km2",
+      "S5",
+      "S10",
+      "confirmed_exit_count",
+      "confirmed_exit_area_km2",
+      "full_record_exit_share",
+      "H3_eligible_count",
+      "H3_eligible_area_km2",
+      "H3_returned_count",
+      "H3_returned_area_km2",
+      "H3_return_rate",
+      "H5_eligible_count",
+      "H5_eligible_area_km2",
+      "H5_returned_count",
+      "H5_returned_area_km2",
+      "H5_return_rate",
+      "secondary_eligible_count",
+      "secondary_eligible_area_km2",
+      "secondary_exit_count",
+      "secondary_exit_area_km2",
+      "secondary_exit_rate",
+      "unique_canonical_cells",
+      "canonical_unique_land_km2",
+      "unique_area_envelope_km2",
+      "unique_area_definition",
+      "native_pixel_definition",
+      "unique_native_footprint_pixels",
+      "native_footprint_union_area_km2"
+    ],
+    "keys": [
+      "scenario",
+      "version",
+      "K",
+      "product",
+      "support",
+      "pathway",
+      "weight"
+    ],
+    "rows": 606
+  },
+  "cross_product.csv": {
+    "fields": [
+      "product",
+      "pathway",
+      "estimand",
+      "horizon",
+      "estimate",
+      "initial_area_km2",
+      "age_risk_area_km2"
+    ],
+    "keys": [
+      "product",
+      "pathway",
+      "estimand",
+      "horizon"
+    ],
+    "rows": 8
+  },
+  "hazard_coefficients.csv": {
+    "fields": [
+      "family",
+      "pathway",
+      "mode",
+      "support",
+      "term",
+      "beta",
+      "HR",
+      "status",
+      "n_risk_rows",
+      "events",
+      "inference",
+      "reason"
+    ],
+    "keys": [
+      "family",
+      "pathway",
+      "mode",
+      "support",
+      "term"
+    ],
+    "rows": 252
+  },
+  "hazard_flow.csv": {
+    "fields": [
+      "pathway",
+      "support",
+      "subjects",
+      "cells",
+      "risk_rows",
+      "events",
+      "risk_weight_sum",
+      "subject_weight_sum",
+      "ESA_supports",
+      "ESA_support_years",
+      "climate_supports",
+      "blocks",
+      "block_max_weight_share",
+      "block_weight_HHI",
+      "ESA_max_weight_share",
+      "ESA_weight_HHI",
+      "climate_max_weight_share",
+      "climate_weight_HHI"
+    ],
+    "keys": [
+      "pathway",
+      "support"
+    ],
+    "rows": 28
+  },
+  "main_data_sources.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 36
+  },
+  "main_design_windows.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 18
+  },
+  "main_postexit.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 18
+  },
+  "month_support_distribution.csv": {
+    "fields": [
+      "calendar_year",
+      "mean_contribution_n",
+      "support_years"
+    ],
+    "keys": [
+      "calendar_year",
+      "mean_contribution_n"
+    ],
+    "rows": 191
+  },
+  "occupancy.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 18
+  },
+  "prediction_calibration.csv": {
+    "fields": [
+      "pathway",
+      "validation",
+      "model",
+      "kind",
+      "fold",
+      "N_known",
+      "cases",
+      "controls",
+      "intercept",
+      "slope",
+      "converged",
+      "iterations",
+      "normalized_score_equation_residual",
+      "historical_intercept",
+      "historical_slope",
+      "link",
+      "status",
+      "slope_difference_from_historical",
+      "intercept_difference_from_historical"
+    ],
+    "keys": [
+      "pathway",
+      "validation",
+      "model",
+      "kind",
+      "fold"
+    ],
+    "rows": 56
+  },
+  "prediction_points.csv": {
+    "fields": [
+      "pathway",
+      "validation",
+      "model",
+      "metric",
+      "scope",
+      "estimate",
+      "status",
+      "numerator",
+      "denominator_pair_weight",
+      "pair_count",
+      "N",
+      "events",
+      "tied_tol",
+      "max_single_pair_weight_share",
+      "pair_weight_effective_count",
+      "unit",
+      "G_status"
+    ],
+    "keys": [
+      "pathway",
+      "validation",
+      "model",
+      "metric",
+      "scope"
+    ],
+    "rows": 80
+  },
+  "reappearance.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 18
+  },
+  "reexit.csv": {
+    "fields": [
+      "object_id",
+      "block",
+      "source_table",
+      "row",
+      "column",
+      "source_value",
+      "display_value",
+      "equal"
+    ],
+    "keys": [
+      "object_id",
+      "block",
+      "row",
+      "column"
+    ],
+    "rows": 18
+  },
+  "regional_points.csv": {
+    "fields": [
+      "model_id",
+      "pathway",
+      "support",
+      "zone",
+      "focal_term",
+      "beta",
+      "status",
+      "scope"
+    ],
+    "keys": [
+      "model_id",
+      "pathway",
+      "support",
+      "zone",
+      "focal_term"
+    ],
+    "rows": 96
+  },
+  "retention.csv": {
+    "fields": [
+      "estimand",
+      "pathway",
+      "age",
+      "initial_episodes",
+      "unique_locations",
+      "initial_area_km2",
+      "Y_episodes",
+      "D_episodes",
+      "C_episodes",
+      "Y_km2",
+      "D_km2",
+      "C_km2",
+      "terminal_C_km2",
+      "S",
+      "risk_fraction_of_initial",
+      "support_status",
+      "difference_vs_new_ALL_percentage_points",
+      "global_first_minus_this_percentage_points",
+      "evidence",
+      "initial_area_unit"
+    ],
+    "keys": [
+      "estimand",
+      "pathway",
+      "age"
+    ],
+    "rows": 20
+  },
+  "s11_points.csv": {
+    "fields": [
+      "pathway",
+      "relative_year",
+      "population",
+      "n_sets",
+      "unadjusted",
+      "adjusted",
+      "status",
+      "reason",
+      "unit",
+      "inference",
+      "comparison_scope"
+    ],
+    "keys": [
+      "pathway",
+      "relative_year",
+      "population"
+    ],
+    "rows": 48
+  },
+  "scale_retention.csv": {
+    "fields": [
+      "product",
+      "support",
+      "estimand",
+      "pathway",
+      "metric",
+      "horizon",
+      "estimate",
+      "numerator_area_m2",
+      "denominator_area_m2",
+      "risk_area_m2",
+      "denominator_count",
+      "numerator_count"
+    ],
+    "keys": [
+      "product",
+      "support",
+      "estimand",
+      "pathway",
+      "metric",
+      "horizon"
+    ],
+    "rows": 200
+  }
+}

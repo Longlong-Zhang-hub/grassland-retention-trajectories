@@ -1,0 +1,29 @@
+{
+  "python": "3.10.8",
+  "os": "Windows-10-10.0.26200-SP0",
+  "synthetic_dependencies": "stdlib only",
+  "plot_backend": "Agg",
+  "font": "DejaVu Sans",
+  "freetype": "2.6.1",
+  "installed_plot_dependencies": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "fonttools": "4.63.0",
+    "kiwisolver": "1.5.0",
+    "packaging": "26.2",
+    "pillow": "12.2.0",
+    "pyparsing": "3.3.2",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0"
+  },
+  "software_version": "0.1.0-rc1",
+  "software_license": "MIT",
+  "tested_workflows": [
+    "synthetic",
+    "author-only frozen displays"
+  ],
+  "release_version": "0.1.0-rc1",
+  "scope_note": "Original recorded Windows test environment; independent synthetic test also passed on Python 3.13.5 in a Linux container on 2026-11-10. No historical raw-data rebuild attempted."
+}
